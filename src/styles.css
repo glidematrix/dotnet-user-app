@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container{
+    max-width: 720px;
+    margin: auto;
+}
+
+form{
+    border: 1px solid #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 6px;
+    padding: 5px;
+    margin: 100px auto 0;
+}
+
+form input,
+form button{
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    font-size: 16px;
+    outline: none;
+}
+
+form button{
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: darkblue;
+}
+
+form button:disabled{
+    background-color: darkgray;
+}
+
+
+a{
+    color: blue;
+}
+
+a:hover{
+    color: darkblue;
+}

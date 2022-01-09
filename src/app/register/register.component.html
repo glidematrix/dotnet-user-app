@@ -1,0 +1,22 @@
+<form
+    [formGroup]="form"
+    (submit)="submit()"
+>
+    <h2
+        [ngStyle]="{'text-align': 'center', 'margin': '2px'}"
+    >
+        User App - Register
+    </h2>
+    <input formControlName="firstName" type="text" placeholder="First Name">
+    <input formControlName="lastName" type="text" placeholder="Last Name">
+    <input formControlName="username" type="text" placeholder="Username">
+    <input formControlName="password" type="password" placeholder="Password">
+    <button [disabled]="isLoading" type="submit">Register</button>
+    <p
+        [ngStyle]="{'text-align': 'center'}"
+    >
+        Already registered? 
+        <a routerLink="/login">Login</a>
+    </p>
+    <span [style]="{'color':'red'}">{{errMsg}}</span>
+</form>
